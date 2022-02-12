@@ -1,0 +1,32 @@
+<div class="container">
+
+    <form (ngSubmit)="processForm()">
+
+        <div class="form group">
+            <label for="id">Id</label>
+            <input type="text" [readonly]="readonlyParam" name="id" class="form-control" [(ngModel)]="emp.id">
+        </div>
+
+        <div class="form group">
+            <label for="fullname">Name</label>
+            <input type="text" name="fullname" class="form-control" [(ngModel)]="emp.fullname">
+        </div>
+
+        <div class="form group">
+            <label for="address">Address</label>
+            <input type="text" name="address" class="form-control" [(ngModel)]="emp.address">
+        </div>
+
+        <div class="form group">
+            <label for="workinghours">WorkHours</label>
+            <input type="text" name="workinghours" class="form-control" [(ngModel)]="emp.workinghours">
+        </div>
+
+        <div class="form group">
+            <label for="salary">Salary</label>
+            <input type="text" name="salary" class="form-control" [(ngModel)]="emp.salary">
+        </div>
+        <input type="submit" value="Save" class="btn btn-success">
+        <button class="btn btn-secondary" (click)="cancel()">Cancel</button>
+    </form>
+</div>

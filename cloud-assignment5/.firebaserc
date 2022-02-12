@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cloudassignment5-cf032": {
+      "hosting": {
+        "CloudAssignment5": [
+          "cloudassignment5-cf032"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cloudassignment5-cf032"
+  }
+}
